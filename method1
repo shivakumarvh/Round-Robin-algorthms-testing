@@ -1,0 +1,20 @@
+# Round-algorthms-testing
+
+# Round Robin equall distribution method.
+
+# here we will install new server to existed set of server (assuming and place 'Server5' inside server list) then no need change the program.
+
+
+servers=['Server1','Server2','Server3','Server4','Server5','Server6']  # Set of servers installed.
+
+count=0
+
+while count>(-1):   # using while loop to keep procees run request n times.
+    
+    for n in range(len(servers)):
+        
+        request=input("Enter Something : ")    # Assuming request receiving from client.
+        
+        print("Your request for {} is loaded to {}............".format(request,servers[n]))  # Assume we are loading request to server.
+
+    count+=1
