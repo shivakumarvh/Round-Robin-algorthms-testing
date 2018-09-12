@@ -1,0 +1,24 @@
+
+# We have installed 5 servers and request will loads server randomly.
+
+# Assume we are installing one more server(i,e 'Server5') then also no need to change in program.
+
+
+import random  # importing module to generate randomly.
+
+count=0  #initiating the count.
+
+while count>(-1):    # We are using while loop to keep process upto n number of requests.
+
+    servers=['Server1','Server2','Server3','Server4']  # Set of servers.
+
+    m=len(servers) # Total number of servers.
+
+    n=(random.randint(0,(m-1)))  # generates random number.
+
+    request=input("Enter Something : ")  # Receiving client request.
+
+    print("Your request for {} is loaded to {}...........".format(request,servers[n]))  # Loading request to server randomly.
+
+    count+=1    # One requst per time.
+    
