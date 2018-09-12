@@ -1,0 +1,27 @@
+# Round Robin light weight method (this will used for different capcities servers).
+
+# Assume we are installing another server having different capacity with existed servers( installing server i,e ('Server5',2)) then no need to change program.
+
+
+
+
+
+servers=[('Server1',4),('Server2',1),('Server3',3),('Server4',4),('Server5',2)]    # Set of servers with capacities (server name, capacity).
+
+count=0
+
+while count>(-1):   # To keep request process for n times we are using while loop.
+
+    for server_name, capacity in servers:
+
+        count=0  # Initiating count 
+
+        while count<capacity:
+
+            request=input("Enter Something : ")    # Receiving request from client.
+
+            print("Your request for {} is loaded to {}............".format(request,server_name))  # Loading request to servers.
+
+            count+=1
+
+    count+=1
